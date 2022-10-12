@@ -2,3 +2,6 @@ Django
 psycopg2
 requests
 djangorestframework
+pyrebase
+pillow
+django-cors-headers
