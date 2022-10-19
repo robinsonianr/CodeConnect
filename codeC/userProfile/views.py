@@ -1,5 +1,4 @@
 from requests import request
-from firebase_auth.authentication import FirebaseAuthenication
 from .models import Profile
 import pyrebase
 from rest_framework.views import APIView
