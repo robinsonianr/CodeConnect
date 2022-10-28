@@ -46,8 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'firebase_auth',
     'userProfile',
+    'projects',
 ]
 
 MIDDLEWARE = [
@@ -90,7 +90,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'CodeConnectDatabase', 
         'USER': 'postgres', 
-        'PASSWORD': 'root',
+        'PASSWORD': 'redacted',
         'HOST': 'localhost', 
         'PORT': '5432',
     }

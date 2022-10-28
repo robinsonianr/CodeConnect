@@ -5,3 +5,4 @@ djangorestframework
 pyrebase
 pillow
 django-cors-headers
+python-dotenv
