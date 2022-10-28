@@ -1,10 +1,12 @@
 from requests import request
+
+from codeC.userProfile.serializers import UserProfileSerializer
 from .models import Profile
 import pyrebase
 from rest_framework.views import APIView
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
-from rest_framework import status
+from rest_framework import status, generics
 
 firebaseConfig = {
   "apiKey": "AIzaSyBGmQMfE3AyEocDnQ3_K0eXuL3wZmaHiHU",
@@ -42,3 +44,16 @@ class CreateUserProfile(APIView):
         return Response(status=status.HTTP_400_BAD_REQUEST)
         
         
+
+
+class ProfileView(generics.ListAPIView):
+  permission_classes = [AllowAny]
+  serializer_class = UserProfileSerializer
+  queryset = Profile.objects.all()
+
+
+
+class EditProfile(generics.UpdateAPIView):
+  permission_classes = [AllowAny]
+  serializer_class = UserProfileSerializer
+  queryset = Profile.objects.all
