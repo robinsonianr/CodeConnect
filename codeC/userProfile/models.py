@@ -22,8 +22,8 @@ class Profile(models.Model):
 
     pfp = models.ImageField(upload_to='profile_pics', default='profile_pics/default.png')
 
-    spotlightProj = models.JSONField()
+    spotlightProj = models.JSONField(default=None, null=True)
 
-    pinned = models.JSONField()
+    pinned = models.JSONField(default=None, null=True)
 
     
