@@ -22,8 +22,8 @@ class Profile(models.Model):
 
     pfp = models.ImageField(upload_to='profile_pics', default='profile_pics/default.png')
 
-    #spotlightProj = models.ForeignKey("Project", on_delete=models.CASCADE,default=None, null=True)
+    spotlightProj = models.JSONField()
 
-    #pinned = models.ManyToManyField(Project)
+    pinned = models.JSONField()
 
     
