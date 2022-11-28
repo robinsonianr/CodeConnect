@@ -20,7 +20,7 @@ class CreateUserProfile(APIView):
           django_user.save()
           return Response(data, status=status.HTTP_201_CREATED)
         except:
-          print("Email Already Exist")
+          print("Email already exist or error connecting to local database.")
         return Response(status=status.HTTP_400_BAD_REQUEST)
         
         

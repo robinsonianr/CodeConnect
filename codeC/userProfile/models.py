@@ -20,7 +20,7 @@ class Profile(models.Model):
 
     skills = models.CharField(max_length=128, blank=True, null=True)
 
-    pfp = models.ImageField(upload_to='profile_pics', default='profile_pics/default.png')
+    pfp = models.ImageField(upload_to='profile_pics', default='codeC/userProfile/profile_pics/defualt.png')
 
     spotlightProj = models.JSONField(default=None, null=True)
 
