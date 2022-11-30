@@ -32,7 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-CORS_ORIGIN_WHITELIST = ["http://localhost:3000", "https://codeconnectservice.netlify.app"]
+CORS_ORIGIN_WHITELIST = ["http://localhost:3000", "https://codeconnectservice.netlify.app", "http://0.0.0.0:3000"]
 
 
 # Application definition
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'userProfile',
+    'project',
 ]
 
 MIDDLEWARE = [

@@ -20,6 +20,6 @@ from userProfile.views import CreateUserProfile
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('register/', CreateUserProfile.as_view(), name='register'),
+    path('project/', include('project.urls')),
     path('user/', include('userProfile.urls'))
 ]
