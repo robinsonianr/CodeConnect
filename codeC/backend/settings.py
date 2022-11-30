@@ -32,7 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-CORS_ORIGIN_WHITELIST = ["http://localhost:3000", "https://codeconnectservice.netlify.app"]
+CORS_ORIGIN_WHITELIST = ["http://localhost:3000", "https://codeconnectservice.netlify.app", "http://0.0.0.0:3000"]
 
 
 # Application definition
@@ -90,7 +90,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'CodeConnectDatabase', 
         'USER': 'postgres', 
-        'PASSWORD': 'root',
+        'PASSWORD': 'Conan+Madi3',
         'HOST': 'localhost', 
         'PORT': '5432',
     }

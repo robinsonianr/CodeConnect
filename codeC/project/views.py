@@ -24,7 +24,7 @@ class CreateProject(APIView):
 
 
 
-class ProjectDetails(generics.RetrieveAPIView):
+class ProjectDetails(generics.ListAPIView):
     permission_classes = [AllowAny]
     serializer_class = ProjectSerializer
     queryset = Project.objects.all()
