@@ -90,7 +90,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'CodeConnectDatabase', 
         'USER': 'postgres', 
-        'PASSWORD': 'Conan+Madi3',
+        'PASSWORD': 'root',
         'HOST': 'localhost', 
         'PORT': '5432',
     }
