@@ -10,3 +10,5 @@
 6. in backend/settings.py change database information to personal database info
 7. cd to codeC directory and run 'python manage.py makemigrations' then run 'python manage.py migrate' to make changes to database.
 8. run 'python manage.py runserver'
+
+More resources/instructions  [Working with Django and PostgreSQL](https://stackpython.medium.com/how-to-start-django-project-with-a-database-postgresql-aaa1d74659d8)
