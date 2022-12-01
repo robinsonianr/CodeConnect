@@ -33,7 +33,10 @@ class ProfileDetails(generics.RetrieveAPIView):
 
 
 
-class EditProfile(generics.UpdateAPIView):
+class EditProfile(generics.RetrieveUpdateAPIView):
   permission_classes = [AllowAny]
   serializer_class = UserProfileSerializer
-  queryset = Profile.objects.all
+  queryset = Profile.objects.all()
+
+  def put(self, request, *args, **kwargs):
+      return self.update(request, *args, **kwargs)
